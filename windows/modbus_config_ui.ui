@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ModbusConfig</class>
+ <widget class="QWidget" name="ModbusConfig">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>974</width>
+    <height>495</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Modbus Config</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="3">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>NOMBRE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>PUERTO</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>TIPO</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLineEdit" name="id_lineEdit"/>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>TIMEOUT</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>ENDIAN</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLineEdit" name="port_lineEdit"/>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLineEdit" name="baud_lineEdit"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QComboBox" name="type_comboBox">
+       <item>
+        <property name="text">
+         <string>RTU</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TCP</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLineEdit" name="name_lineEdit"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>BAUD RATE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLineEdit" name="timeout_lineEdit"/>
+     </item>
+     <item row="13" column="0">
+      <widget class="QComboBox" name="endian_comboBox">
+       <item>
+        <property name="text">
+         <string>BIG ENDIAN</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LITTLE ENDIAN</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Equipos:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListView" name="equipos_listView"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="new_eq_pushButton">
+       <property name="text">
+        <string>Nuevo equipo</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="save_eq_pushButton">
+       <property name="text">
+        <string>Guardar equipo</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="del_eq_pushButton">
+       <property name="text">
+        <string>Eliminar equipo</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="close_pushButton">
+     <property name="text">
+      <string>Salir</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>Lecturas</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListView" name="lecturas_listView"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="new_lect_pushButton">
+       <property name="text">
+        <string>Nueva</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="save_lec_pushButton">
+       <property name="text">
+        <string>Guardar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="del_lec_pushButton">
+       <property name="text">
+        <string>Eliminar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="5">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>Numero de registros</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="numer_reg_spinBox">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>Direccion</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="direccion_lect_lineEdit"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>Tipo de datos</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="data_type_comboBox">
+       <item>
+        <property name="text">
+         <string>UINT16</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>INT16</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UINT32</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>INT32</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>FLOAT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SWAPPED FLOAT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DOUBLE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SWAPPED DOUBLE</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>Tabla de variables</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="table_name_lineEdit"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>Variables</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="vars_listWidget"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="add_reg_pushButton">
+         <property name="text">
+          <string>+</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="edit_read_pushButton">
+         <property name="text">
+          <string>Modificar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="remove_reg_pushButton">
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
